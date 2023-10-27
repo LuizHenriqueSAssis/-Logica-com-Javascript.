@@ -17,13 +17,21 @@
 
 
   if (n1 == n2){
-    alert("empate");
+    alert("Empate");
   } else {
-    var n3 = parseInt(Math.random() * 2);
-    if (n1 == n3) {
-      alert("Jogador1,venceu"); 
-    } else {
-      alert("Jogador 2,venceu");
+    var n3 = parseInt(Math.random() * 2)
+    if(n3 == 0){
+      if(n1 < n2){
+        alert("Jogador1, ganhou");
+      }else {
+        alert("Jogador2, ganhou")
+      }
+    }else {
+      if(n1 > n2){
+        alert("jogador1, ganhou")
+      }else{
+        alert("jogador2, ganhou")
+      }
     }
   } 
 
