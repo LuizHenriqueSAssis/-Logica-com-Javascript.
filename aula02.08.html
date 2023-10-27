@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lógica de Programação com Javascript</title>
+</head>
+<body>
+  <h1>Lógica de Programação com Javascript</h1>
+
+  <script>
+    var nome = prompt("Digite seu primeiro nome : ");
+    var comprimento = nome.length;
+
+    switch(comprimento){
+      case 1:
+        alert("oi");
+        break;
+      case 2:
+        alert("ola");
+        break;
+      case 3:
+        alert("teste");
+        break;
+      default:
+        alert("não deu ");
+    }
+
+    var numero = prompt("Digite um numero");
+
+    switch(numero) {
+      case "1":
+        alert("é string ");
+        break;
+      case 1:
+        alert("é numero ");
+        break;
+
+    }
+
+    if(typeof numeo === "number"){
+      alert("é numero ");
+    }else if(typeof numero === "string"){
+      alert("é string ");
+    }
+
+  </script>  
+</body>
+</html>
