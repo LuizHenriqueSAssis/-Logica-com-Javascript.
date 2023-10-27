@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lógica de Programação com Javascript</title>
+</head>
+<body>
+  <h1>Lógica de Programação com Javascript</h1>
+
+  <script>
+
+    var n1 = prompt("digite um numero");
+    n1 = parseFloat(n1);
+
+    var n2 = prompt("Digite outro numero")
+    n2 = parseFloat(n2);
+
+    var media = (n1 + n2) / 2
+
+    if(n1 == 0 || n2 == 0 ) {
+      alert("Reprovado")
+    } else {
+      if(media < 5){
+          alert("Reprovado")
+        } else {
+            alert("Aprovado")
+        } 
+    }
+
+    //Solução do professor
+
+    /* if(media > 5 && n1 > 0 && n2 > 0){
+        alert("Aprovado"){
+        } else {
+          alert("Reprovado")
+       }
+    } 
+    */
+
+  </script>
+</body>
+</html>
