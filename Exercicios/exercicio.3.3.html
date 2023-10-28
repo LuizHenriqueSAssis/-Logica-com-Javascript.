@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lógica de Programação com Javascript</title>
+</head>
+<body>
+  <h1>Lógica de Programação com Javascript</h1>
+
+  <script>
+    var ano = 1004
+    
+    while(ano <= 2017){
+      if(! (ano % 100 === 0) || (ano % 400 === 0 )){
+        document.write(ano + " é bisexto" + "<br>" + "<hr>")
+      }else {
+       document.write(ano + "<strong> não é bisexto </strong>" + "<br>" + "<hr>")
+      }
+      ano += 4;
+    }
+  </script>
+
+</body>
+</html>
