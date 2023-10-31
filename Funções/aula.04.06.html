@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lógica de Programação com Javascript</title>
+</head>
+<body>
+  <h1>Lógica de Programação com Javascript</h1>
+  
+  <button id="a" onclick="calcular('+')">+</button>
+  <button id="b" onclick="calcular('-')">-</button>
+  <button id="c" onclick="calcular('*')">*</button>
+  <button id="d" onclick="calcular('/')">/</button>
+
+<div id="output">
+
+</div>
+
+  <script>
+    
+    
+
+    var n1 = prompt("Digite um nemero ")
+    n1 = parseFloat(n1)
+
+
+    escreva()
+
+    
+
+    function escreva(){
+      var output = document.querySelector("#output")
+      output.innerHTML = n1
+
+    }
+
+    function calcular(a){
+
+      n2 = prompt("Digite um nemero ")
+      var n2 
+      n2 = parseFloat(n2)
+      
+      
+     switch(a){
+      case '+':
+        n1 += n2;
+        break
+      case '-':
+        n1 -= n2
+        break
+      case '*':
+        n1 *= n2
+        break
+      case '/':a
+        n1 /= n2
+
+     }
+
+     
+
+      escreva()
+    
+
+    }
+
+
+  </script>
+</body>
+</html>
