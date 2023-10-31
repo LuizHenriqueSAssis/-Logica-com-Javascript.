@@ -8,10 +8,10 @@
 <body>
   <h1>Lógica de Programação com Javascript</h1>
   
-  <button onclick="calcular('+')">+</button>
-  <button onclick="calcular('-')">-</button>
-  <button onclick="calcular('*')">*</button>
-  <button onclick="calcular('/')">/</button>
+  <button id="a" onclick="calcular('+')">+</button>
+  <button id="b" onclick="calcular('-')">-</button>
+  <button id="c" onclick="calcular('*')">*</button>
+  <button id="d" onclick="calcular('/')">/</button>
 
 <div id="output">
 
@@ -24,7 +24,10 @@
     var n1 = prompt("Digite um nemero ")
     n1 = parseFloat(n1)
 
+
     escreva()
+
+    
 
     function escreva(){
       var output = document.querySelector("#output")
@@ -32,20 +35,35 @@
 
     }
 
-    function calcular( a , s , m , d){
+    function calcular(a){
 
-      
-
-      var n2 = prompt("Digite um numero");
+      n2 = prompt("Digite um nemero ")
+      var n2 
       n2 = parseFloat(n2)
       
-    switch (){
       
-    }
-      
+     switch(a){
+      case '+':
+        n1 += n2;
+        break
+      case '-':
+        n1 -= n2
+        break
+      case '*':
+        n1 *= n2
+        break
+      case '/':a
+        n1 /= n2
+
+     }
+
+     
 
       escreva()
+    
+
     }
+
 
     
 
