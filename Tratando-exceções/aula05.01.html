@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lógica de Programação com Javascript</title>
+</head>
+<body>
+  <h1>Lógica de Programação com Javascript</h1>
+
+  <button onclick="iniciarcalculo('+')">+</button>
+  <button onclick="iniciarcalculo('-')">-</button>
+  <button onclick="iniciarcalculo('*')">*</button>
+  <button onclick="iniciarcalculo('/')">/</button>
+
+  <div id="output"></div>
+
+  <script>
+    
+    var n2 = prompt("Digite um numero ")
+    n2 = parseFloat(n2)
+
+    escreva(n2)
+
+    function iniciarcalculo(simbolo, n1, n2){
+      n1 =  document.querySelector('#output').textContent
+      n1 = parseFloat(n1)
+
+      n2 = prompt("Digte outro numero ")
+      n2 = parseFloat(n2)
+
+      try{
+        var msg = calcular(simbolo, n1, n2)
+      }catch(e){
+        alert(e);
+        return;
+      }
+
+      escreva(msg)
+
+    }
+
+    function escreva(mensagem){
+      var output = document.querySelector('#output')
+
+      output.innerHTML = mensagem
+
+    }
+
+    function calcular(simbolo, n1 , n2){
+      console.log(simbolo)
+
+      if(simbolo !== '+' && simbolo !== '-' && simbolo !== '*' && simbolo !== '/' )
+      return 0;
+
+      if( isNaN(n1) || isNaN(n2)){
+        throw new Error("passar somente numeros");
+        return 0;
+      }
+
+      var numerocalculado = null
+
+      switch(simbolo){
+        case '+':
+          numerocalculado = n1 + n2
+          break
+        case '-':
+          numerocalculado = n1 - n2
+          break
+        case '*':
+          numerocalculado = n1 * n2
+          break
+        case '/':
+          numerocalculado = n1 / n2
+      }
+      return numerocalculado
+    }
+
+
+
+  </script>
+</body>
+</html>
