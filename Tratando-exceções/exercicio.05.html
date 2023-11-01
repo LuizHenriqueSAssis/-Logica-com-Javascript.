@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lógica de Programação com Javascript</title>
+</head>
+<body>
+  <h1>Lógica de Programação com Javascript</h1>
+
+    <button onclick="iniciarCalculo()">calcular área</button>
+    
+    <div id="output"></div>
+
+    <script>
+
+        
+
+        var n1 = prompt("Digite a largura  ")
+        n1 = parseFloat(n1)
+
+        var n2 = prompt("Digite a altura")
+
+        if(isNaN(n1) || isNaN(n2)){
+          alert("Digitar somente numeros ")
+          return;
+        }
+
+          var area = n1 * n2
+       
+
+        escreva("A área total é :" + area)
+
+      function iniciarCalculo(){
+
+         n1 = prompt("Digite a largura  ")
+         n1 = parseFloat(n1)
+
+         n2 = prompt("Digite a altura")
+
+         if(isNaN(n1a) || isNaN(n2)){
+         escreva("Digitar somente numeros ");
+          return;
+        }
+
+        
+          var area = n1 * n2
+        
+
+        escreva("A área total é :" + area)
+       
+      }
+
+      function escreva(mensagem){
+        var output = document.querySelector("#output")
+
+        output.innerHTML = mensagem 
+      }
+
+    </script>
+
+</body>
+</html>
