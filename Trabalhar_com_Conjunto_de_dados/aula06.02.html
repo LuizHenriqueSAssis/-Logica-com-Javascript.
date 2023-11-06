@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lógica de Programação com Javascript</title>
+</head>
+<body>
+  <h1>Lógica de Programação com Javascript</h1>
+  
+  <div id="output"></div>
+
+  <script>
+    var output = document.querySelector('#output');
+
+    var produto1 = new Object();
+       produto1.nome = 'caneta';
+       produto1.preco = 2;
+       produto1.quantidade = 10;
+       
+       
+
+       var msg = '';
+       msg += 'nome : ' + produto1.nome + '<br>';
+       msg += 'preço : R$ ' + produto1.preco + '<br>';
+       msg += 'quantidade : ' + produto1.quantidade + '<br>';
+
+       output.innerHTML = msg;
+  
+    produto1.comprar = function(qtd){
+      if(!qtd){
+        qtd = 1;
+      }
+
+      console.log('comprou caneta');
+      //this.quantidade--;
+      console.log('comprou caneta');
+      this.quantidade = this.quantidade -qtd;
+      console.log(this.quantidade);
+
+    }
+  
+ 
+    
+    
+
+
+    /*var lapis = new Object();
+    lapis.nome = 'caneta'
+    lapis.preco = 1.2;
+    lapis.quantidade = 20;*/
+
+    //var i = prompt('digite o codigo do produto');
+    //i = parseInt(i);
+
+
+   
+ 
+
+    </script>
+</body>
+</html>
