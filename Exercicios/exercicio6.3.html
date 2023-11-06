@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lógica de Programação com Javascript</title>
+</head>
+
+<body>
+  <h1>Lógica de Programação com Javascript</h1>
+
+  <div id="output"></div>
+
+  <script>
+    var n = prompt("Digite seu nome : ")
+    var e = prompt("Digite se email :")
+    //fiz para ver se poderia adicionar valores personalizados.
+
+    var dados = [{"nome": "luiz" ,"email": "rickassi.41@gmail.com"  },{"nome": "isadora", "email": "isadorangs@gmail.com"},{"nome": n, "email": e }]
+
+    var msg ='';
+
+    for(var i = 0; i < dados.length; i++){
+
+      msg += "<h1> nome :" + dados[i].nome + "</h1>";
+      msg += "<h1> email :" + dados[i].email + "</h1>";
+
+    }
+
+    var output = document.querySelector("#output").innerHTML = msg
+
+  </script>
+
+</body>
+
+</html>
